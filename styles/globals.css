@@ -1,3 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --secondary-bg-color: #303030;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .secondary-bg {
+    @apply bg-[var(--secondary-bg-color)];
+  }
+
+  .inherit-rounded {
+    border-radius: inherit;
+  }
+
+  .typical-button-icon {
+    @apply rounded-full hover:cursor-pointer hover:bg-[var(--secondary-bg-color)] h-full;
+  }
+
+  .typical-icon-size {
+    @apply h-6 w-6;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -20,7 +50,8 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #fff;
+    background: #0f0f0f;
+    fill: #fff;
   }
 }
