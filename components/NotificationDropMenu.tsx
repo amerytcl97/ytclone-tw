@@ -28,7 +28,7 @@ export default function NotificationDropMenu() {
       {open && (
         <div
           id="dropdown"
-          className="absolute w-[30rem] right-0 shadow secondary-bg rounded-lg"
+          className="absolute z-auto w-[30rem] right-0 shadow secondary-bg rounded-lg"
         >
           <div className="w-full">
             {/* DROP MENU HEADER */}

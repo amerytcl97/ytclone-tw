@@ -6,7 +6,7 @@ import Logo from "../icons/Logo";
 
 export default function Header() {
   return (
-    <header className="h-[56px] sticky top-0 w-full flex flex-row items-center justify-between px-4">
+    <header className="h-[56px] z-50 sticky top-0 w-full flex flex-row items-center justify-between px-4">
       {/* MENU AND LOGO CONTAINER */}
       <div className="flex items-center gap-4 h-full">
         <SidebarButton />
@@ -17,9 +17,7 @@ export default function Header() {
       {/* SEARCH CONTAINER */}
       <SearchInput />
       {/* NOTIFICATION AND PROFILE CONTAINER */}
-      <div className="">
-        <NotificationDropMenu />
-      </div>
+      <NotificationDropMenu />
     </header>
   );
 }

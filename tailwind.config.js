@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "medium-light": "#AAA",
+      },
       height: {
         "respect-header": "calc(100vh - 56px)",
         "respect-sidebar-collapse": "5rem",
@@ -24,5 +27,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("prettier-plugin-tailwindcss")],
+  plugins: [
+    require("prettier-plugin-tailwindcss"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };
